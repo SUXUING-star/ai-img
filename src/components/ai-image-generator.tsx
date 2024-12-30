@@ -207,32 +207,18 @@ const AIImageGenerator = () => {
           alignItems: 'center',
           minHeight: '300px'
         }}>
-            // 在图片容器中添加边框来查看实际区域
-            <div style={{ 
-            marginTop: 16,
-            background: '#f5f5f5',
-            padding: '20px',
-            borderRadius: 8,
-            display: 'flex',
-            justifyContent: 'center',
-            alignItems: 'center',
-            minHeight: '300px',
-            border: '1px solid red' // 添加这行来查看容器边界
-            }}>
-            <img
-                src={imageUrl}
-                alt="AI 生成的图片"
-                style={{
-                maxWidth: '100%',
-                maxHeight: '600px',
-                objectFit: 'contain',
-                borderRadius: 8,
-                boxShadow: '0 2px 8px rgba(0,0,0,0.1)',
-                border: '1px solid blue' // 添加这行来查看图片边界
-                }}
-                loading="lazy"
-            />
-            </div>
+          <img
+            src={imageUrl}
+            alt="AI 生成的图片"
+            style={{
+              maxWidth: '100%',
+              maxHeight: '600px',
+              objectFit: 'contain',
+              borderRadius: 8,
+              boxShadow: '0 2px 8px rgba(0,0,0,0.1)'
+            }}
+            loading="lazy"
+          />
         </div>
       )}
     </Card>
