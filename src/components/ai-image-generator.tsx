@@ -30,11 +30,10 @@ const [isModelLoading, setIsModelLoading] = useState(false);
 
 const generateImage = async (retryCount = 0) => {
     const apiKey = process.env.NEXT_PUBLIC_HUGGING_FACE_API_KEY;
-
     // 加一个检查确保 API key 存在
     if (!apiKey) {
-        console.error('API key not found');
-        // 处理错误情况
+    console.error('API key not found');
+    // 处理错误情况
     }
 
    setLoading(true);
